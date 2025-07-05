@@ -1,6 +1,6 @@
 version: 1.0
 
-endpoints:
+providers:
   openAI:
     baseURL: https://api.llm7.io/v1
     models:
