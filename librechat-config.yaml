@@ -1,0 +1,14 @@
+version: 1.0
+
+endpoints:
+  openAI:
+    baseURL: https://api.llm7.io/v1
+    models:
+      default:
+        - gpt-4.1-nano
+        - gpt-3.5-turbo
+      fetch: false
+    titleModel: gpt-4.1-nano
+    summarize: false
+    summaryModel: gpt-4.1-nano
+    modelDisplayLabel: "LLM7.io"
