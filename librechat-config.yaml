@@ -1,14 +1,25 @@
 version: 1.0
 
-providers:
+cache: true
+
+registration:
+  socialLogins:
+    - "discord"
+    - "facebook"
+    - "github"
+    - "google"
+    - "openid"
+
+endpoints:
   openAI:
-    baseURL: https://api.llm7.io/v1
+    apiKey: "${OPENAI_API_KEY}"
+    baseURL: "https://api.openai.com/v1"
     models:
       default:
-        - gpt-4.1-nano
-        - gpt-3.5-turbo
+        - gpt-4o-mini
       fetch: false
-    titleModel: gpt-4.1-nano
+    titleModel: gpt-4o-mini
     summarize: false
-    summaryModel: gpt-4.1-nano
-    modelDisplayLabel: "LLM7.io"
+    summaryModel: gpt-4o-mini
+    modelDisplayLabel: "ChatGPT-4o Mini"
+
